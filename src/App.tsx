@@ -172,8 +172,8 @@ function App() {
 
           <div className="profile-content">
             <div className="intro-copy">
-              <p className="intro-copy__eyebrow">UNA HAMBURGUESA HONESTA</p>
-              <h1>La mejor razón para <em>volver a juntarnos.</em></h1>
+              <p className="intro-copy__eyebrow">Encontraste tu nueva hamburguesa favorita</p>
+              <h1>Menos floro, más sabor</h1>
               <p>Mancha Burger Studio</p>
             </div>
 
@@ -183,15 +183,15 @@ function App() {
                 <span>Pide tu hamburguesa</span>
                 <ArrowUpRight size={19} aria-hidden="true" />
               </a>
-              <a className="action" href={carta} target="_blank" rel="noopener noreferrer" aria-label="Revisa nuestra carta en Instagram">
+              <a className="action action--menu" href={carta} target="_blank" rel="noopener noreferrer" aria-label="Chequea nuestra carta en Instagram">
                 <BookOpen size={20} aria-hidden="true" />
-                <span>Revisa nuestra carta aquí</span>
+                <span>Chequea nuestra carta aquí</span>
                 <ArrowUpRight size={19} aria-hidden="true" />
               </a>
             </section>
 
             <section className="social" aria-label="Redes sociales">
-              <div className="section-head"><h2>Síguenos la pista</h2><span>@manchaburgerstudio</span></div>
+              <div className="section-head"><h2>Pura carne en redes</h2><span>@manchaburgerstudio</span></div>
               <div className="social__links">
                 <a className="action" href={instagram} target="_blank" rel="noopener noreferrer">
                   <SiInstagram size={21} aria-hidden="true" />
@@ -213,7 +213,7 @@ function App() {
             </a>
 
             <section className="location" aria-labelledby="location-heading">
-              <div className="section-head"><h2 id="location-heading">Encuéntranos</h2></div>
+              <div className="section-head"><h2 id="location-heading">Directo a la plancha</h2></div>
               <iframe
                 src={mapEmbed}
                 title="Ubicación de Mancha Burger Studio en Google Maps"

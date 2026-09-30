@@ -15,7 +15,7 @@ Abre http://localhost:8087. La entrada reproduce la secuencia de 6,7 segundos de
 
 ## Contenido
 
-- Pedido por WhatsApp y llamada al 961818343.
+- Pedido por WhatsApp al 961818343 y acceso a la historia destacada «carta» del Instagram oficial. Instagram puede pedir iniciar sesión para verla.
 - Instagram y TikTok de @manchaburgerstudio.
 - Enlace directo para dejar una opinión en Google.
 - Mapa de Google Maps de Mancha Burger Studio proporcionado por el usuario.

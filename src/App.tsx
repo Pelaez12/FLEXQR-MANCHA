@@ -1,5 +1,5 @@
 import { useCallback, useLayoutEffect, useState } from 'react';
-import { ArrowUpRight, Phone, Play } from 'lucide-react';
+import { ArrowUpRight, BookOpen, Play } from 'lucide-react';
 import { motion, useAnimate, useReducedMotion } from 'motion/react';
 import { SiInstagram, SiTiktok, SiWhatsapp } from 'react-icons/si';
 import { FcGoogle } from 'react-icons/fc';
@@ -7,6 +7,7 @@ import { FcGoogle } from 'react-icons/fc';
 const phone = '961818343';
 const whatsapp = `https://wa.me/51${phone}`;
 const instagram = 'https://www.instagram.com/manchaburgerstudio/';
+const carta = 'https://www.instagram.com/stories/highlights/18109706654580879/';
 const tiktok = 'https://www.tiktok.com/@manchaburgerstudio';
 const review = 'https://search.google.com/local/writereview?placeid=ChIJJ8bSTlvJBZERcFXXgYpKOqw';
 const mapEmbed = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.394769057907!2d-77.05918282400069!3d-12.085104388154694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c95b4ed2c627%3A0xac3a4a8a81d75570!2sMancha%20Burger%20Studio!5e0!3m2!1ses-419!2spe!4v1790801796303!5m2!1ses-419!2spe';
@@ -176,15 +177,15 @@ function App() {
               <p>Mancha Burger Studio</p>
             </div>
 
-            <section className="actions" aria-label="Pide y contacta a Mancha">
+            <section className="actions" aria-label="Pide y consulta la carta de Mancha">
               <a className="action action--primary" href={whatsapp} target="_blank" rel="noopener noreferrer">
                 <SiWhatsapp size={22} aria-hidden="true" />
                 <span>Pide tu hamburguesa</span>
                 <ArrowUpRight size={19} aria-hidden="true" />
               </a>
-              <a className="action" href={`tel:+51${phone}`}>
-                <Phone size={20} aria-hidden="true" />
-                <span>Llámanos al {phone}</span>
+              <a className="action" href={carta} target="_blank" rel="noopener noreferrer" aria-label="Revisa nuestra carta en Instagram">
+                <BookOpen size={20} aria-hidden="true" />
+                <span>Revisa nuestra carta aquí</span>
                 <ArrowUpRight size={19} aria-hidden="true" />
               </a>
             </section>

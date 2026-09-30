@@ -17,8 +17,9 @@ Abre http://localhost:8087. La entrada reproduce la secuencia de 6,7 segundos de
 
 - Pedido por WhatsApp y llamada al 961818343.
 - Instagram y TikTok de @manchaburgerstudio.
-- Portadas locales de los dos TikTok y el reel de Instagram proporcionados; cada tarjeta abre la publicación original en su plataforma.
 - Enlace directo para dejar una opinión en Google.
+- Mapa de Google Maps de Mancha Burger Studio proporcionado por el usuario.
+- Portadas locales de los dos TikTok y el reel de Instagram proporcionados como última sección de contenido; cada tarjeta abre la publicación original en su plataforma.
 - Contacto de FLEXCORE (992272521) en el pie, separado del teléfono de Mancha.
 
 Los dos archivos de logo en `public/` se extrajeron de la página 4 del manual de marca aportado. `scripts/extract-mancha-logo.py` permite repetir la extracción con ese PDF si se dispone del original. Las tres portadas se guardaron desde las publicaciones indicadas por el usuario para evitar cuadros vacíos cuando fallen las inserciones externas. No se generaron fotografías ni imágenes de comida.

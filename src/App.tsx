@@ -9,6 +9,7 @@ const whatsapp = `https://wa.me/51${phone}`;
 const instagram = 'https://www.instagram.com/manchaburgerstudio/';
 const tiktok = 'https://www.tiktok.com/@manchaburgerstudio';
 const review = 'https://search.google.com/local/writereview?placeid=ChIJJ8bSTlvJBZERcFXXgYpKOqw';
+const mapEmbed = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.394769057907!2d-77.05918282400069!3d-12.085104388154694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c95b4ed2c627%3A0xac3a4a8a81d75570!2sMancha%20Burger%20Studio!5e0!3m2!1ses-419!2spe!4v1790801796303!5m2!1ses-419!2spe';
 
 const videos = [
   {
@@ -204,6 +205,25 @@ function App() {
               </div>
             </section>
 
+            <a className="review-link" href={review} target="_blank" rel="noopener noreferrer">
+              <span className="review-link__icon"><FcGoogle size={25} aria-hidden="true" /></span>
+              <span><strong>¿Ya nos probaste?</strong><small>Deja tu opinión en Google</small></span>
+              <ArrowUpRight size={20} aria-hidden="true" />
+            </a>
+
+            <section className="location" aria-labelledby="location-heading">
+              <div className="section-head"><h2 id="location-heading">Encuéntranos</h2></div>
+              <iframe
+                src={mapEmbed}
+                title="Ubicación de Mancha Burger Studio en Google Maps"
+                width="400"
+                height="300"
+                loading="lazy"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              />
+            </section>
+
             <section className="videos" aria-labelledby="videos-heading">
               <div className="section-head"><h2 id="videos-heading">Desde Mancha</h2><span>DESLIZA PARA VER</span></div>
               <div className="videos__list" role="list" aria-label="Videos de Mancha Burger Studio">
@@ -225,11 +245,6 @@ function App() {
               </div>
             </section>
 
-            <a className="review-link" href={review} target="_blank" rel="noopener noreferrer">
-              <span className="review-link__icon"><FcGoogle size={25} aria-hidden="true" /></span>
-              <span><strong>¿Ya nos probaste?</strong><small>Deja tu opinión en Google</small></span>
-              <ArrowUpRight size={20} aria-hidden="true" />
-            </a>
           </div>
 
           <footer className="footer"><span>MANCHA BURGER STUDIO</span><a href="tel:+51992272521" aria-label="Llamar a FLEXCORE al 992272521"><strong>FLEXCORE</strong> · Contacto: 992272521</a></footer>
